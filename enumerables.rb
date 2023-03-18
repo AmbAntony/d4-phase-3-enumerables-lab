@@ -80,7 +80,7 @@ puts get_spicy_food_by_cuisine(spicy_foods, 'Thai')
 # Given an array of spicy foods, **return an array of hashes** 
 # sorted by heat level from lowest to highest
 def sort_by_heat(spicy_foods)
-  spicy_foods.sort_by{|k, v| k[:heat_level]}
+  spicy_foods.sort_by{|keys, values| keys[:heat_level]}
 end
 
 puts sort_by_heat(spicy_foods)
